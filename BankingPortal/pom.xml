@@ -8,11 +8,11 @@
 		<version>3.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.webapp</groupId>
+	<artifactId>bankingportal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BankingPortal</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Banking Management System</description>
 	<url/>
 	<licenses>
 		<license/>
