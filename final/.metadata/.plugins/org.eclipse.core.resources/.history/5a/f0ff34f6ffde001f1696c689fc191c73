@@ -1,0 +1,8 @@
+package com.bank.service;
+
+import com.bank.dto.BankResponse;
+
+public interface UserService {
+	BankResponse createAccount();
+
+}

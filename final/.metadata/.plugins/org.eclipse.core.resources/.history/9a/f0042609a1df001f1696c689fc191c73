@@ -1,0 +1,20 @@
+package com.bank.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bank.dto.EmailDetails;
+
+@Service
+public class EmailServiceImpl implements EmailService {
+	
+	@Autowired
+	private JavaEmai
+
+	@Override
+	public void sendEmailAlert(EmailDetails emailDetails) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
