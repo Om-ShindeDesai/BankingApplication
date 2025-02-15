@@ -1,0 +1,85 @@
+.withdraw-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.withdraw-container {
+    width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Soft glass effect */
+}
+
+.withdraw-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #8B0000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+    border-color: #b63d3d;
+    outline: none;
+    box-shadow: 0 0 8px rgba(182, 61, 61, 0.5);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #b63d3d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background: #922828;
+}
+
+.success-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.error-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Responsive Styling */
+@media (max-width: 500px) {
+    .withdraw-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

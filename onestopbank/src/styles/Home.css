@@ -1,0 +1,87 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('/Users/sanjana/Pictures/bank.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.home-content {
+    background: rgba(0, 0, 0, 0.7);  /* Slightly darker for better text contrast */
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    max-width: 90%;
+    width: 600px;  /* Ensures consistent width */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+
+/* Button Group for Login & Register */
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login-btn, .register-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Login Button */
+.login-btn {
+    background: rgba(255, 94, 120, 0.9); /* Semi-transparent */
+    color: white;
+}
+
+.login-btn:hover {
+    background: rgba(231, 76, 100, 1);
+}
+
+/* Register Button */
+.register-btn {
+    background: rgba(29, 191, 115, 0.9); /* Semi-transparent */
+    color: white;
+}
+
+.register-btn:hover {
+    background: rgba(23, 164, 91, 1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .home-content {
+        padding: 30px;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

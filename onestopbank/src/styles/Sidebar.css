@@ -1,0 +1,116 @@
+
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: calc(100vh - 60px); /* Sidebar height adjusted below navbar */
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: fixed;
+    left: -260px; /* Initially hidden */
+    top: 60px; /* Positioned below navbar */
+    overflow-y: auto;
+    transition: left 0.4s ease-in-out;
+    z-index: 900;
+}
+
+/* Adjusting dashboard content when sidebar opens */
+.dashboard-content {
+    margin-left: 0;
+    transition: margin-left 0.4s ease-in-out;
+}
+
+/* Push content when sidebar is open */
+.sidebar.open ~ .dashboard-content {
+    margin-left: 250px;
+}
+
+/* Sidebar Open */
+.sidebar.open {
+    left: 0;
+}
+
+/* Sidebar List */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar Items */
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    padding: 12px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Active Item */
+.sidebar ul li.active {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateX(8px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Icon Styling */
+.sidebar ul li svg {
+    font-size: 22px;
+}
+
+/* Moves Toggle Button with Sidebar */
+.sidebar.open + .toggle-btn {
+    left: 275px; /* Moves right with sidebar */
+}
+
+/* Toggle Button Hover
+.toggle-btn:hover {
+    background: #2575fc;
+    transform: scale(1.15);
+} */
+
+/* Scrollbar Styling */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .sidebar ul li {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .toggle-btn {
+        left: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .sidebar.open + .toggle-btn {
+        left: 235px;
+    }
+}

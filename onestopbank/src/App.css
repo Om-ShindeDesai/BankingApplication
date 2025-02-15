@@ -1,0 +1,25 @@
+/* When Sidebar is Open */
+.toggle-btn.move-right {
+  left: 275px; /* Moves toggle button out when sidebar opens */
+}
+
+
+/* Main Content */
+.sidebar-main-content {
+  margin-top: 100px;
+  margin-left: 0;
+  padding: 20px;
+  transition: margin-left 0.4s ease-in-out;
+}
+
+/* When Sidebar is Open */
+.main-content.shifted {
+  margin-left: 260px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .toggle-btn.move-right {
+    left: 230px; /* Adjust for smaller screens */
+  }
+}

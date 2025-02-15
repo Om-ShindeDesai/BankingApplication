@@ -1,0 +1,28 @@
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .transaction-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .transaction-credit {
+    color: green;
+  }
+  
+  .transaction-debit {
+    color: red;
+  }
+  
+  .transaction-transfer {
+    color: blue;
+  }
+  

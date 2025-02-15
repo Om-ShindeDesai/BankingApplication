@@ -1,0 +1,98 @@
+/* 🎨 Fullscreen Background with Image Overlay */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Dark overlay */
+        url("/Users/sanjana/Pictures/blur.png") center/cover no-repeat fixed; /* Background Image */
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+/* 🌟 Fade-in animation for the background */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 📦 Contact Form Container */
+.contact-container {
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    
+    /* Smooth fade-in effect */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInForm 1s ease-in-out forwards;
+}
+
+/* 🌟 Fade-in animation for the form */
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📝 Form Styling */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 🎯 Input & Textarea Styling with Smooth Effects */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🖋️ Input Focus Effect */
+input:focus, textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* Ensure textarea resizes properly */
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* 🎨 Button Styling with Hover Effects */
+button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}

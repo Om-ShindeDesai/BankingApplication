@@ -1,0 +1,96 @@
+.transfer-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  button.transfer-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  button.transfer-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button.transfer-button:active {
+    transform: scale(0.98);
+  }
+  
+  .error, .success {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .error {
+    background: rgba(255, 0, 0, 0.1);
+    color: red;
+    border: 1px solid red;
+  }
+  
+  .success {
+    background: rgba(0, 128, 0, 0.1);
+    color: green;
+    border: 1px solid green;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 480px) {
+    .transfer-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input, button.transfer-button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
